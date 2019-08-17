@@ -3,12 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="index.css">
-  <title></title>
-
+  <title>Resume</title>
 </head>
 <body>
-  <div class="container">
-    <h1>VIKTOR <span>HABCHAK</span></h1>
+  <div id="A4">
+    <section class="main--header">
+      <h1>VIKTOR <span>HABCHAK</span></h1>
+      <span class="position">WEB DEVELOPER</span>
+      <img src="cover.jpg" alt="">
+    </section>
+
+    <section class='section--about-me'>
+      <h2 class="title">ABOUT ME</h2>
+      <p>
+      Hello, my name is Viktor Habchak and I'm a Software Developer looking to enter the field, proficient in web technologies, much more so in Front-End. Working towards Full-Stack. Great English communication skills, good problem solver. Eager to get experience of working in a team.
+      </p>
+    </section>
+
+    <section class='section--contacts'>
+      <div class="horizontal-split">
+        <div class="contacts--phone">098-992-4321</div>
+        <div class="contacts--email">vikdotdev@gmail.com</div>
+        <div class="contacts--github">github.com/vikdotdev</div>
+        <div class="contacts--skype">Viktor Habchak</div>
+      </div>
+    </section>
+
+    <section class='section--work-history'>
+      <h2>WORK HISTORY</h2>
+      <div class="work-history--entry">
+        <h3 class='work-history--entry-title'>Manager</h3>
+        <span class='work-history--entry-where'>at gabchaktex</span>
+        <p>Due to company having a small number of employees and had a lot of different working experiences despite my official position:</p>
+        <ul>
+          <li>successfully handled communications between Chinese Exporter and Ukrainian Importer (in English) with regards to customs documents;</li>
+          <li>was involved in development of new types of textile products;</li>
+          <li>handled the machinery such as circular knitting machines, weaving and grinding machines</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class='section--skills'>
+      <h2 class='title'>SKILLS</h2>
+      <div class="skills--list">
+        <div class="skill">
+          <div class="skill--name">Javascript</div>
+          <div class="skill--value">
+            <progress min='0' max='100' value='90'></progress>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill--name">HTML5</div>
+          <div class="skill--value">
+            <progress min='0' max='100' value='86'></progress>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill--name">CSS (SCSS)</div>
+          <div class="skill--value">
+            <progress min='0' max='100' value='82'></progress>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill--name">React</div>
+          <div class="skill--value">
+            <progress min='0' max='100' value='62'></progress>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill--name">Linux</div>
+          <div class="skill--value">
+            <progress min='0' max='100' value='68'></progress>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill--name">VCS (Git)</div>
+          <div class="skill--value">
+            <progress min='0' max='100' value='72'></progress>
+          </div>
+        </div>
+       <div class="skill">
+          <div class="skill--name">SQL</div>
+          <div class="skill--value">
+            <progress min='0' max='100' value='45'></progress>
+          </div>
+        </div>
+      </div>
+      <div class="skills--familiar-with">
+        Also familiar with: NodeJS, Express, Webpack, Electron, SQL, Bulma, Bash, REST, OOP, SOLID, DRY.
+      </div>
+    </section>
+
+    <section class='section--projects'>
+      <h2 class='title'>PROJECTS</h2>
+      <div class="project">
+        <h3 class='project--title'>gabchaktex.com.ua</h3>
+        <a class="project--address">github.com/vikdotdev/gabchaktex-react</a>
+        <p class="project--description">
+          Multi-lingual, SPA product gallery with lazy-loading. Initially written with Webpack and various libraries for the sake of learning inner workings of Webpack. Re-writen in React for maintainability. Created all gallery photos.
+        </p>
+      </div>
+      <div class="project">
+        <h3 class='project--title'>electron-youtube-downloader</h3>
+        <a class="project--address">github.com/vikdotdev/electron-youtube-downloader</a>
+        <p class="project--description">
+          Multi-platform desktop application written in Electron. Due to youtubes inability to serve videos larger than 720p as a single file, it has the ability to download audio/video separately and then mux them together. Muxing is powered by ffmpeg.
+        </p>
+      </div>
+    </section>
+
+    <section class='section--languages'>
+      <h2 class="title">LANGUAGES</h3>
+      <ul>
+        <li>English - Upper-Intermediate/Advanced</li>
+        <li>Ukrainian - Native Speaker</li>
+        <li>Polish - Pre-Intermediate</li>
+      </ul>
+    </section>
+
+    <section class='section--education'>
+      <h2 class="title">EDUCATION</h3>
+      <div class="education--item">
+        <h3 class='education--item-degree'>Bachelors degree</h3>
+        <span class="education--item-course">in Accounting and Auditing</span>
+        <span class="education--item-university">
+          Ivano-Frankivsk Education and Research Institute of Management Ternopil National Economic University
+        </span>
+        <span class="education--item-year">2010 - 2014</span>
+      </div>
+    </section>
+
+    <section class='section--certificates'>
+      <h2 class="title">CERTIFICATES</h2>
+      <ul>
+        <li>Javascript: Understanding the Weird Parts - <a>ude.my/UC-EID6VOQN</a></li>
+        <li>Javascript Essentials <a>ude.my/UC-Q28VY7YF</a></li>
+        <li>HTML5 CSS3 Course <a>ude.my/UC-61FWZPQR</a></li>
+        <li>Programming 101 <a>ude.my/UC-LRS56LDK</a></li>
+      </ul>
+    </section>
+
+    <section class="section--hobbies">
+      <h2 class="title">HOBBIES</h2>
+      <ul>
+        <li>Guitar</li>
+        <li>Electrical Engineering</li>
+        <li>Photography</li>
+      </ul>
+    </section>
   </div>
 </body>
 </html>

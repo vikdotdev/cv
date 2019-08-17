@@ -13,6 +13,24 @@
 * {
   font-family: 'Proxima Nova';
   font-size: 10px;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+#A4 {
+  width: 21cm;
+  height: 29.7cm;
+  background-color: #fff;
+  padding: 1.5rem 5rem;
+}
+
+.section--about-me p {
+  font-size: 1.2rem;
 }
 
 h1 {
