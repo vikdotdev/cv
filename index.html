@@ -9,7 +9,7 @@
   <div id='A4'>
     <div class='header-contect-container'>
       <section class='main--header'>
-        <div class="header">
+        <div class="header--name">
           <h1 class='name'>VIKTOR<br /> <span class='surname'>HABCHAK</span></h1>
           <span class='occupation'>WEB DEVELOPER</span>
         </div>
@@ -17,26 +17,25 @@
       </section>
 
       <section class='section about-me'>
-        <h2 class='title'>ABOUT ME</h2>
+        <h2 class='header'>ABOUT ME</h2>
         <p>
         Hello, my name is Viktor Habchak and I'm a Software Developer looking to enter the field, proficient in web technologies, much more so in Front-End. Working towards Full-Stack. Great English communication skills, good problem solver. Eager to get experience of working in a team.
         </p>
       </section>
     </div>
 
-    <section class='section contacts'>
-      <div class='horizontal-split'>
-        <div class='contacts--phone'>098-992-4321</div>
-        <div class='contacts--email'>vikdotdev@gmail.com</div>
-        <div class='contacts--github'>github.com/vikdotdev</div>
-        <div class='contacts--skype'>Viktor Habchak</div>
+    <section class='contacts'>
+      <div class='flex-container'>
+        <div class='phone'><img src='icons/phone.svg' class="icon">098-992-4321</div>
+        <div class='email'><img src='icons/email.svg' class="icon">vikdotdev@gmail.com</div>
+        <div class='skype'><img src='icons/skype.svg' class="icon">Viktor Habchak</div>
       </div>
     </section>
 
     <div class='main-content-container'>
       <div class='left-column'>
         <section class='section skills'>
-          <h2 class='title'>SKILLS</h2>
+          <h2 class='header'>SKILLS</h2>
           <div class='skills--list'>
             <div class='skill'>
               <div class='skill--name'>Javascript</div>
@@ -68,33 +67,33 @@
             </div>
           </div>
           <div class='skills--familiar-with'>
-            Also familiar with: NodeJS, Express, Webpack, Electron, SQL, Bulma, Bash, REST, OOP, SOLID, DRY.
+            Also familiar with: NodeJS, npm, Express, Webpack, Electron, SQL, Bulma, Bash, REST, OOP, SOLID, DRY.
           </div>
         </section> <!-- skills end -->
 
         <section class='section languages'>
-          <h2 class='title'>LANGUAGES</h3>
+          <h2 class='header'>LANGUAGES</h2>
           <ul>
-            <li>English - Upper-Intermediate/Advanced</li>
-            <li>Ukrainian - Native Speaker</li>
-            <li>Polish - Pre-Intermediate</li>
+            <li><span class="lang">English</span> &mdash; <span class="level">Advanced</span></li>
+            <li><span class="lang">Ukrainian</span> &mdash; <span class="level">Native Speaker</span></li>
+            <li><span class="lang">Polish</span> &mdash; <span class="level">Pre-Intermediate</span></li>
           </ul>
         </section>
 
         <section class='section education'>
-          <h2 class='title'>EDUCATION</h3>
-          <div class='education--item'>
-            <h3 class='education--item-degree'>Bachelors degree</h3>
-            <span class='education--item-course'>in Accounting and Auditing</span>
-            <span class='education--item-university'>
-              Ivano-Frankivsk Education and Research Institute of Management Ternopil National Economic University
+          <h2 class='header'>EDUCATION</h2>
+          <div class='diploma'>
+            <h3 class='subheader'>Bachelors degree</h3>
+            <span class='occupation'>in Accounting and Auditing</span>
+            <span class='university'>
+              at Ivano-Frankivsk Education and Research Institute of Management Ternopil National Economic University
             </span>
-            <span class='education--item-year'>2010 - 2014</span>
+            <span class='year'>2010 &mdash; 2014</span>
           </div>
         </section> <!-- education end -->
 
         <section class='section hobbies'>
-          <h2 class='title'>HOBBIES</h2>
+          <h2 class='header'>HOBBIES</h2>
           <ul>
             <li>Guitar</li>
             <li>Electrical Engineering</li>
@@ -104,17 +103,17 @@
       </div>
       <div class='right-column'>
         <section class='section projects'>
-          <h2 class='title'>PROJECTS</h2>
+          <h2 class='header'>PROJECTS</h2>
           <div class='project'>
-            <h3 class='project--title'>gabchaktex.com.ua</h3>
-            <a class='project--address'>github.com/vikdotdev/gabchaktex-react</a>
-            <p class='project--description'>
+            <h3 class='subheader'>gabchaktex.com.ua</h3>
+            <a class='address'>github.com/vikdotdev/gabchaktex-react</a>
+            <p class='description'>
               Multi-lingual, SPA product gallery with lazy-loading. Initially written with Webpack and various libraries for the sake of learning inner workings of Webpack. Re-writen in React for maintainability. Created all gallery photos.
             </p>
           </div>
           <div class='project'>
-            <h3 class='project--title'>electron-youtube-downloader</h3>
-            <a class='project--address'>github.com/vikdotdev/electron-youtube-downloader</a>
+            <h3 class='subheader'>electron-youtube-downloader</h3>
+            <a class='address'>github.com/vikdotdev/electron-youtube-downloader</a>
             <p class='project--description'>
               Multi-platform desktop application written in Electron. Due to youtubes inability to serve videos larger than 720p as a single file, it has the ability to download audio/video separately and then mux them together. Muxing is powered by ffmpeg.
             </p>
@@ -122,11 +121,11 @@
         </section>
 
         <section class='section work-history'>
-          <h2 class='title'>WORK HISTORY</h2>
-          <div class='work-history--entry'>
-            <h3 class='work-history--entry-title'>__Occupation__</h3>
-            <span class='work-history--entry-where'>at gabchaktex</span>
-            <p>Due to company having a small number of employees and had a lot of different working experiences despite my official position:</p>
+          <h2 class='header'>WORK HISTORY</h2>
+          <div class='entry'>
+            <h3 class='subheader'>__Occupation__</h3>
+            <span class='address'>at gabchaktex</span>
+            <p>Due to company having a small number of employees I had a lot of different working experiences despite my official position:</p>
             <ul>
               <li>successfully handled communications between Chinese Exporter and Ukrainian Importer (in English) with regards to customs documents;</li>
               <li>was involved in development of new types of textile products;</li>
@@ -136,7 +135,7 @@
         </section>
 
         <section class='section certificates'>
-          <h2 class='title'>CERTIFICATES</h2>
+          <h2 class='header'>CERTIFICATES</h2>
           <ul>
             <li>Javascript: Understanding the Weird Parts - <a>ude.my/UC-EID6VOQN</a></li>
             <li>Javascript Essentials <a>ude.my/UC-Q28VY7YF</a></li>
