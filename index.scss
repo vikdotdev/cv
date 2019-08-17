@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 300;
+  src: url('./fonts/ProximaNova-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: 700;
+  src: url('./fonts/ProximaNova-Bold.otf') format('opentype');
+}
+
+$main-header-horizontal-margin: 3.6rem;
+
+$global-font-size: 1.2rem;
+$header-font-size: 0;
+$header-margin-top: 0;
+$header-margin-bottom: 0;
+$subheader-font-size: 0;
+$subheader-margin-top: 0;
+$subheader-margin-bottom: 0;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+  font-family: 'Proxima Nova';
+  font-size: 10px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+#A4 {
+  width: 21cm;
+  height: 29.7cm;
+  background-color: #fff;
+  padding: 4.6rem 8rem;
+  // display: grid;
+  // grid-gap: 4rem;
+  // justify-content: center;
+  // grid-template-columns: 5fr 9fr;
+}
+
+.contacts,
+.education,
+.hobbies,
+.projects,
+.work-history,
+.certificates,
+.languages {
+  font-size: $global-font-size;
+}
+
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  text-align: center;
+
+  &::before, &::after {
+    content: '';
+    border-radius: 4px;
+    width: 100%;
+    max-width: 2rem;
+    height: 0.2rem;
+    margin: 0.45rem 2.4rem;
+
+    display: inline-block;
+    background-color: black;
+  }
+}
+
+.main--header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+
+  & .name, .occupation {
+    margin-left: $main-header-horizontal-margin;
+  }
+
+  & .name {
+    // font-family: 'Proxima Nova';
+    margin-top: 2.8rem;
+    margin-bottom: 1.2rem;
+    font-size: 3.6rem;
+    font-weight: 700;
+    & .surname {
+      font-size: 3.6rem;
+      font-weight: 300;
+    }
+  }
+
+  & .occupation {
+    font-size: 1.5rem;
+  }
+
+  & .cover-photo {
+    border-radius: 50%;
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: 100% 0%;
+    margin-right: $main-header-horizontal-margin;
+  }
+}
+
+.about-me {
+  & p {
+    font-size: 1.2rem;
+  }
+}
+
+.main-content-container {
+  display: flex;
+  padding-top: 3rem;
+
+  & .left-column {
+    padding-right: 2rem;
+  }
+
+  & .right-column {
+    padding-left: 2rem;
+  }
+
+}
+
+.skills {
+  & .skill {
+    display: flex;
+    justify-content: space-between;
+    font-size: $global-font-size;
+
+    & .skill--name {
+    }
+
+    & .skill--value {
+      height: 6px;
+      border-radius: 14px;
+    }
+
+    & .skill--value::-webkit-progress-value {
+      background-color: #444;
+      border-radius: 1px;
+    }
+
+    & .skill--value::-webkit-progress-bar {
+      background-color: #bbb;
+      border-radius: 1px;
+    }
+  }
+
+  & .skills--list {
+    margin-bottom: 2rem;
+  }
+
+  & .skills--familiar-with {
+    font-size: $global-font-size;
+  }
+}
+
+.education {
+
+}

@@ -1,48 +1,111 @@
 @font-face {
   font-family: 'Proxima Nova';
   font-weight: 300;
-  src: url('./fonts/ProximaNova-Light.otf') format('opentype');
-}
+  src: url("./fonts/ProximaNova-Light.otf") format("opentype"); }
 
 @font-face {
   font-family: 'Proxima Nova';
   font-weight: 700;
-  src: url('./fonts/ProximaNova-Bold.otf') format('opentype');
-}
+  src: url("./fonts/ProximaNova-Bold.otf") format("opentype"); }
 
 * {
-  font-family: 'Proxima Nova';
-  font-size: 10px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html, body {
   background-color: #444;
   margin: 0;
   padding: 0;
-}
+  font-family: 'Proxima Nova';
+  font-size: 10px; }
+
+h1, h2, h3 {
+  margin-top: 0; }
+
+ul {
+  padding-left: 1.5rem; }
 
 #A4 {
   width: 21cm;
   height: 29.7cm;
   background-color: #fff;
-  padding: 1.5rem 5rem;
-}
+  padding: 4.6rem 8rem; }
 
-.section--about-me p {
-  font-size: 1.2rem;
-}
+.contacts,
+.education,
+.hobbies,
+.projects,
+.work-history,
+.certificates,
+.languages {
+  font-size: 1.2rem; }
 
-h1 {
-  font-family: 'Proxima Nova';
-  font-size: 3.6rem;
-  font-weight: 700;
-}
+.section {
+  margin-bottom: 4rem; }
 
-h1 span {
-  font-size: 3.6rem;
-  font-weight: 300;
-}
+.title {
+  font-size: 1.7rem;
+  text-align: center; }
+  .title::before, .title::after {
+    content: '';
+    border-radius: 4px;
+    width: 100%;
+    max-width: 2rem;
+    height: 0.2rem;
+    margin: 0.45rem 2.4rem;
+    display: inline-block;
+    background-color: black; }
 
+.main--header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem; }
+  .main--header .name, .main--header .occupation {
+    margin-left: 3.6rem; }
+  .main--header .name {
+    margin-top: 2.8rem;
+    margin-bottom: 1.2rem;
+    font-size: 3.6rem;
+    font-weight: 700; }
+    .main--header .name .surname {
+      font-size: 3.6rem;
+      font-weight: 300; }
+  .main--header .occupation {
+    font-size: 1.5rem; }
+  .main--header .cover-photo {
+    border-radius: 50%;
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: 100% 0%;
+    margin-right: 3.6rem; }
 
+.about-me p {
+  font-size: 1.2rem; }
 
+.main-content-container {
+  display: flex;
+  padding-top: 3rem; }
+  .main-content-container .left-column {
+    padding-right: 2rem; }
+  .main-content-container .right-column {
+    padding-left: 2rem; }
+
+.skills .skill {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem; }
+  .skills .skill .skill--value {
+    height: 6px;
+    border-radius: 14px; }
+  .skills .skill .skill--value::-webkit-progress-value {
+    background-color: #444;
+    border-radius: 1px; }
+  .skills .skill .skill--value::-webkit-progress-bar {
+    background-color: #bbb;
+    border-radius: 1px; }
+
+.skills .skills--list {
+  margin-bottom: 2rem; }
+
+.skills .skills--familiar-with {
+  font-size: 1.2rem; }
