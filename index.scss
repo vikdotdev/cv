@@ -123,6 +123,14 @@ p {
   }
 }
 
+.links {
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+  }
+}
+
 .subheader {
   font-size: 1.4rem;
   margin-bottom: 0.4rem;
