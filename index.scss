@@ -101,10 +101,10 @@ p {
   padding: 0;
   margin: 0 0 3rem 0;
 
-  & .flex-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  & .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     margin: 1rem 2rem;
 
     & .icon {
@@ -170,7 +170,7 @@ p {
     & .cover-photo {
       border-radius: 50%;
       width: 14rem;
-      transform: scale(1.2) ;
+      transform: scale(1.1) ;
     }
   }
 }
