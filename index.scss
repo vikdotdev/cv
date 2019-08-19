@@ -161,17 +161,23 @@ p {
     font-size: 1.5rem;
   }
 
-  & .cover-photo {
-    border-radius: 50%;
-    width: 14rem;
-    height: 14rem;
-    object-fit: cover;
-    object-position: 100% 0%;
+
+  & .cover-container {
     margin-right: $main-header-horizontal-margin;
+    border-radius: 50%;
+    //overflow: hidden;
+
+    & .cover-photo {
+      border-radius: 50%;
+      width: 14rem;
+      transform: scale(1.2) ;
+    }
   }
 }
 
 .about-me {
+  margin-bottom: 2.7rem; // override
+
   & p {
     font-size: 1.2rem;
   }
