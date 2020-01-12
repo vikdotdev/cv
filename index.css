@@ -130,6 +130,7 @@ p {
 .main-content-container {
   display: flex; }
   .main-content-container .left-column {
+    min-width: 20rem;
     padding-right: 2rem; }
   .main-content-container .right-column {
     padding-left: 2rem; }
